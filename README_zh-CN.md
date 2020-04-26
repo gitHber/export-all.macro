@@ -1,4 +1,4 @@
-English | [简体中文](./README_zh-CN.md)
+[English](./README.md) | 简体中文
 
 <div align="center">
 <h1>export-all.macro</h1>
@@ -6,8 +6,8 @@ English | [简体中文](./README_zh-CN.md)
 </div>
 
 [![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/export-all.macro)
-[![Build Status](https://travis-ci.org/yoyooyooo/import.macro.svg?branch=master)](https://travis-ci.org/yoyooyooo/import.macro)
-[![codecov](https://codecov.io/gh/yoyooyooo/import.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/yoyooyooo/import.macro)
+[![Build Status](https://www.travis-ci.org/gitHber/export-all.macro.svg?branch=master)](https://www.travis-ci.org/github/gitHber/export-all.macro)
+[![codecov](https://codecov.io/gh/yoyooyooo/import.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/gitHber/export-all.macro)
 
 ## 安装
 
@@ -82,10 +82,9 @@ module.exports = {
 
 ```js
 import exportAll from "import.macro";
-exportAll(
-  "filename",
-  (exclude: ["node_modules/**/*"]),
-  (noDefault: false),
-  (onlyIndex: true)
-);
+exportAll("filename", {
+  exclude: ["node_modules/**/*"],
+  noDefault: false,
+  onlyIndex: true,
+});
 ```

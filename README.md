@@ -6,8 +6,8 @@ export all from current path
 </div>
 
 [![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/export-all.macro)
-[![Build Status](https://travis-ci.org/yoyooyooo/import.macro.svg?branch=master)](https://travis-ci.org/yoyooyooo/import.macro)
-[![codecov](https://codecov.io/gh/yoyooyooo/import.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/yoyooyooo/import.macro)
+[![Build Status](https://www.travis-ci.org/gitHber/export-all.macro.svg?branch=master)](https://www.travis-ci.org/github/gitHber/export-all.macro)
+[![codecov](https://codecov.io/gh/yoyooyooo/import.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/gitHber/export-all.macro)
 
 ## install
 
@@ -82,5 +82,9 @@ then, you can import `customImport` from `import.macro`：
 
 ```js
 import exportAll from "import.macro";
-exportAll("filename");
+exportAll("filename", {
+  exclude: ["node_modules/**/*"],
+  noDefault: false,
+  onlyIndex: true,
+});
 ```
