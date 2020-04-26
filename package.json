@@ -1,6 +1,6 @@
 {
   "name": "export.macro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "export all from current path(all files and all dirs)",
   "main": "macro.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "gitHber",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gitHber/export-all.macro/issues"
   },
@@ -32,5 +32,9 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
-  }
+  },
+  "files": [
+    "README.md",
+    "macro.js"
+  ]
 }
