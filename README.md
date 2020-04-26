@@ -1,20 +1,20 @@
 English | [简体中文](./README_zh-CN.md)
 
 <div align="center">
-<h1>exportall.macro</h1>
+<h1>export.macro</h1>
 export all from current path
 </div>
 
-[![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/exportall.macro)
+[![NPM version](https://img.shields.io/npm/v/export.macro.svg?style=flat)](https://npmjs.org/package/export.macro)
 [![Build Status](https://www.travis-ci.org/gitHber/export-all.macro.svg?branch=master)](https://www.travis-ci.org/github/gitHber/export-all.macro)
 [![codecov](https://codecov.io/gh/gitHber/export-all.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/gitHber/export-all.macro)
 
 ## install
 
 ```shell
-npm i -D exportall.macro
+npm i -D export.macro
 // or
-yarn add -D exportall.macro
+yarn add -D export.macro
 ```
 
 ## ensure you have installed babel-plugin-macros
@@ -30,7 +30,7 @@ yarn add -D exportall.macro
 ## usage
 
 ```js
-import exportAll from "exportall.macro";
+import exportAll from "export.macro";
 
 exportAll("./", {
   exclude: ["**/*.test.js"],
@@ -78,10 +78,10 @@ module.exports = {
 };
 ```
 
-then, you can import `customImport` from `import.macro`：
+then, you can import `customImport` from `export.macro`：
 
 ```js
-import exportAll from "import.macro";
+import exportAll from "export.macro";
 exportAll("filename", {
   exclude: ["node_modules/**/*"],
   noDefault: false,

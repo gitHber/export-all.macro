@@ -1,5 +1,5 @@
 {
-  "name": "exportall.macro",
+  "name": "export.macro",
   "version": "1.0.0",
   "description": "export all from current path(all files and all dirs)",
   "main": "macro.js",
