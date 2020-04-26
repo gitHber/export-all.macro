@@ -7,7 +7,7 @@ export all from current path
 
 [![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/export-all.macro)
 [![Build Status](https://www.travis-ci.org/gitHber/export-all.macro.svg?branch=master)](https://www.travis-ci.org/github/gitHber/export-all.macro)
-[![codecov](https://codecov.io/gh/yoyooyooo/import.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/gitHber/export-all.macro)
+[![codecov](https://codecov.io/gh/gitHber/export-all.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/gitHber/export-all.macro)
 
 ## install
 

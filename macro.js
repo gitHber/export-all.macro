@@ -26,7 +26,6 @@ function getAllExports(config, cwd) {
     statCache: true,
     ignore: ["node_modules/**/*", "./index.{js,ts,jsx,tsx}", ...exclude],
   });
-  console.log(files);
   files.forEach((file) => {
     if (onlyIndex && file.includes("/") && !file.includes("index")) {
       return false;
