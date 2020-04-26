@@ -4,7 +4,9 @@
   "description": "export all from current path(all files and all dirs)",
   "main": "macro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:update": "jest -u"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/gitHber/export-all.macro#readme",
   "dependencies": {
+    "@babel/types": "^7.9.5",
     "babel-plugin-macros": "^2.8.0"
   },
   "devDependencies": {

@@ -1,5 +1,7 @@
 module.exports = {
-  exportHelper: {
-    name: 'bbb'
-  }
-} 
+  exportAllHelper: {
+    exclude: ["__test__/**/*"],
+    noDefault: false,
+    onlyIndex: true,
+  },
+};

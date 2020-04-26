@@ -6,11 +6,19 @@ pluginTester.default({
   pluginName: "export",
   plugin,
   snapshot: true,
-  babelOptions: { filename: __filename, parserOpts: { plugins: ["jsx"] } },
+  babelOptions: { filename: __filename, parserOpts: {} },
   tests: {
-    'default export': `
-      import exportAll from '../macro';
-      exportAll('../components');
-    `
-  }
+    "default export": `
+      import exportAll from "../macro";
+      exportAll("./", {exclude: ["**/*.test.js"]});
+    `,
+    "export all": `
+      import exportAll from "../macro";
+      exportAll("./", {exclude: ["**/*.test.js"], onlyIndex: false});
+    `,
+    "export noDefault": `
+      import exportAll from "../macro";
+      exportAll("./", {exclude: ["**/*.test.js"], noDefault: true});
+    `,
+  },
 });

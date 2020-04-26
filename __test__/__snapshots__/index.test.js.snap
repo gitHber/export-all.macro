@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`export default export: default export 1`] = `
+
+import exportAll from "../macro";
+exportAll("./", {exclude: ["**/*.test.js"]});
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+export * from "./Button.tsx";
+export { default as Btn } from "./Btn/index.js";
+export * from "./Btn/index.js";
+
+
+`;
+
+exports[`export export all: export all 1`] = `
+
+import exportAll from "../macro";
+exportAll("./", {exclude: ["**/*.test.js"], onlyIndex: false});
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+export * from "./Button.tsx";
+export { default as Btn } from "./Btn/index.js";
+export * from "./Btn/index.js";
+export { default as button } from "./Btn/button.js";
+export * from "./Btn/button.js";
+
+
+`;
+
+exports[`export export noDefault: export noDefault 1`] = `
+
+import exportAll from "../macro";
+exportAll("./", {exclude: ["**/*.test.js"], noDefault: true});
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+export * from "./Button.tsx";
+export * from "./Btn/index.js";
+
+
+`;

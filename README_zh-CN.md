@@ -2,14 +2,14 @@ English | [简体中文](./README_zh-CN.md)
 
 <div align="center">
 <h1>export-all.macro</h1>
-export all from current path
+从当前目录导出所有
 </div>
 
 [![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/export-all.macro)
 [![Build Status](https://travis-ci.org/yoyooyooo/import.macro.svg?branch=master)](https://travis-ci.org/yoyooyooo/import.macro)
 [![codecov](https://codecov.io/gh/yoyooyooo/import.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/yoyooyooo/import.macro)
 
-## install
+## 安装
 
 ```shell
 npm i -D export-all.macro
@@ -17,7 +17,7 @@ npm i -D export-all.macro
 yarn add -D export-all.macro
 ```
 
-## ensure you have installed babel-plugin-macros
+## 需要先安装 babel-plugin-macros
 
 `.babelrc`
 
@@ -27,7 +27,7 @@ yarn add -D export-all.macro
 }
 ```
 
-## usage
+## 使用
 
 ```js
 import exportAll from "export-all.macro";
@@ -39,7 +39,7 @@ exportAll("./", {
 });
 ```
 
-output：
+输出：
 
 ```js
 export {default as Something} from "./Something";
@@ -47,9 +47,9 @@ export * from "./Something";
 ...
 ```
 
-## custom import
+## 配置
 
-add a config file:
+添加配置文件:
 
 - .babel-plugin-macrosrc
 - .babel-plugin-macrosrc.json
@@ -59,13 +59,13 @@ add a config file:
 - babel-plugin-macros.config.js
 - babelMacros in package.json
 
-Configuration is as follows：
+如下：
 
-### options
+### 配置项
 
-- `exclude` string[]: glob ignore config, alreday add `node_modules/**/*`
-- `noDefault` boolean: make sure don't need `export {default as Filename} from './Filename'`, default is false
-- `onlyIndex` boolean: for dir, just export index file, default is true
+- `exclude` string[]: glob 的 ignore 配置, 已经排除`node_modules/**/*`
+- `noDefault` boolean: 确认不需要 default 导出`export {default as Filename} from './Filename'`, 默认为 false
+- `onlyIndex` boolean: 文件夹只导出 index 文件, 默认为 true
 
 ```js
 // .babel-plugin-macrosrc.js
@@ -78,9 +78,14 @@ module.exports = {
 };
 ```
 
-then, you can import `customImport` from `import.macro`：
+也可以使用时：
 
 ```js
 import exportAll from "import.macro";
-exportAll("filename");
+exportAll(
+  "filename",
+  (exclude: ["node_modules/**/*"]),
+  (noDefault: false),
+  (onlyIndex: true)
+);
 ```
