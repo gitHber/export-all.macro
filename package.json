@@ -1,5 +1,5 @@
 {
-  "name": "export-all.macro",
+  "name": "exportall.macro",
   "version": "1.0.0",
   "description": "export all from current path(all files and all dirs)",
   "main": "macro.js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/gitHber/export-all.macro.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "gitHber",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gitHber/export-all.macro/issues"

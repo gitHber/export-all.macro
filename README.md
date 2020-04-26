@@ -1,20 +1,20 @@
 English | [简体中文](./README_zh-CN.md)
 
 <div align="center">
-<h1>export-all.macro</h1>
+<h1>exportall.macro</h1>
 export all from current path
 </div>
 
-[![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/export-all.macro)
+[![NPM version](https://img.shields.io/npm/v/import.macro.svg?style=flat)](https://npmjs.org/package/exportall.macro)
 [![Build Status](https://www.travis-ci.org/gitHber/export-all.macro.svg?branch=master)](https://www.travis-ci.org/github/gitHber/export-all.macro)
 [![codecov](https://codecov.io/gh/gitHber/export-all.macro/branch/master/graph/badge.svg)](https://codecov.io/gh/gitHber/export-all.macro)
 
 ## install
 
 ```shell
-npm i -D export-all.macro
+npm i -D exportall.macro
 // or
-yarn add -D export-all.macro
+yarn add -D exportall.macro
 ```
 
 ## ensure you have installed babel-plugin-macros
@@ -30,7 +30,7 @@ yarn add -D export-all.macro
 ## usage
 
 ```js
-import exportAll from "export-all.macro";
+import exportAll from "exportall.macro";
 
 exportAll("./", {
   exclude: ["**/*.test.js"],
