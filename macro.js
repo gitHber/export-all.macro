@@ -24,7 +24,7 @@ function getAllExports(config, cwd) {
   const files = glob.sync("**/*.{js,jsx,ts,tsx}", {
     cwd,
     statCache: true,
-    ignore: ["node_modules/**/*", "./index.{js,ts,jsx,tsx}", ...exclude],
+    ignore: ["node_modules/**/*", "index.{js,ts,jsx,tsx}", ...exclude],
   });
   files.forEach((file) => {
     if (onlyIndex && file.includes("/") && !file.includes("index")) {
